@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="uz">
+  <!-- Bismillah -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project</title>
+    <!-- custom css link -->
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <!-- tailwind link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font -->
+    <link rel="stylesheet" href="./Space_Mono/SpaceMono-Bold.ttf" />
+    <!-- font awesome link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container_div font-mono">
+      <section class="loader">
+        <img
+          src="https://media.tenor.com/HeOPOURUzwEAAAAM/loading-blue.gif"
+          alt=""
+        />
+      </section>
+      <header class="max-w-[650px] m-auto py-10">
+        <!-- NAVBAR -->
+        <nav
+          class="flex justify-between items-center w-[800px] px-24 max-[447px]:px-4 max-md:px-5 py-2 text-white"
+        >
+          <div class="logo text-black text-3xl flex gap-2 items-center">
+            <h1>devfinder</h1>
+            <form action="" class="form">
+              <input
+                type="text"
+                placeholder="Username"
+                class="bg-transparent outline-none text-xl name"
+              />
+            </form>
+            <!-- <button class="text-lg outline-none border-cyan-600">Find...</button> -->
+          </div>
+          <div class="mode">
+            <div class="card">
+              <div>
+                <input type="checkbox" class="checkbox" id="checkbox" />
+                <label for="checkbox" class="label">
+                  <i class="fa-solid fa-sun fa-spin"></i>
+                  <i class="fa-solid fa-moon fa-beat-fade"></i>
+
+                  <div class="ball"></div>
+                </label>
+              </div>
+            </div>
+            <div
+              class="menu-btn hidden max-[447px]:flex max-[1250px]:flex"
+            ></div>
+          </div>
+        </nav>
+        <div
+          class="search px-24 max-[447px]:px-2 max-[447px]:text-center max-[660px]:py-10"
+        ></div>
+        <div class="container-user"></div>
+  </body>
+  <script src="./js/app.js"></script>
+</html>

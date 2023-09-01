@@ -20,7 +20,6 @@ const getData = async (name) => {
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
-
   let name = surname.value.toLowerCase();
   getData(name);
 });
@@ -58,7 +57,7 @@ function useData(data) {
           <div class="images">
             <a href=${url}>
             <img
-              class="object-contain mt-8 w-[300px]"
+              class="object-contain mt-8 w-[300px] rounded-full"
               src=${avatar_url}
               alt="avatar"
             />

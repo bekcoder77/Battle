@@ -1,10 +1,25 @@
+@font-face {
+  font-family: mono-regular;
+  src: url(../Space_Mono/SpaceMono-Regular.ttf);
+}
+@font-face {
+  font-family: mono-bold;
+  src: url(../Space_Mono/SpaceMono-Bold.ttf);
+
+}
+@font-face {
+  font-family: mono-italic;
+  src: url(../Space_Mono/SpaceMono-Italic.ttf);
+
+}
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 .container_div{
-    background-color: #F6F8FF;
+    background-color:#f6f8ff;
     width: 100%;
     min-height:100%;
 }
@@ -22,29 +37,7 @@ color: #FEFEFE;
     background-color: #1E2A47;
     color: #1E2A47;
 }
-.loader {
-    position: fixed;
-    top: -100%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    height: 100vh;
-    background: #000;
-    align-items: center;
-    justify-content: center;
-    z-index: 999999;
-    transition: 0.4s linear;
-  }
-  .loader img {
-    width: 100%;
-    height: 100vh;
-  
-    object-fit: contain;
-  }
-  .loader.act {
-    top: 50%;
-    display: flex;
-  }
+
   form{
     margin-left: 20px;
   }
@@ -90,4 +83,59 @@ color: #FEFEFE;
   }
   .checkbox:checked + .label .ball {
     transform: translateX(24px);
+  }
+
+  .logo{
+    font-family: mono-bold;
+  }
+
+  .search-bar {
+    width: 100%;
+    height: 69px;
+    display: flex;
+    gap: 23px;
+    background-color: var(--elem-bg);
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.2);
+    padding: 23px 0px 23px 32px;
+    margin-bottom: 24px;
+  }
+  .search-bar form{
+    width: 92%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .search-bar input {
+    width: 74%;
+    height: 30px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 18px;
+    color: var(--text-gray);
+    font-family: mono-regular;
+  }
+  .twitter-in {
+    color: var(--text-gray);
+    text-decoration: none;
+  }
+  .twitter-in:active {
+    text-decoration: underline;
+  }
+  .input-onerror {
+    width: 59%;
+  }
+  .search-btn{
+    font-family: mono-bold;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    background-color: #0079FF;
+    border-radius: 10px;
+    color: #fff;
+  }
+  .search-btn:hover{
+    background-color: #60ABFF;
   }

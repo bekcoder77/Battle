@@ -24,51 +24,92 @@
   </head>
   <body>
     <div class="container_div">
-      <header class="max-w-[850px] m-auto py-10  mb-20">
+      <header class="max-w-[750px] m-auto py-10 rounded-[20px]">
         <!-- NAVBAR -->
-        <nav
-          class="flex justify-between items-center w-[800px] px-24 max-[447px]:px-4 max-md:px-5 py-2 text-white"
-        >
-          <div class="logo text-black text-3xl flex gap-2 items-center">
+        <nav class="flex justify-between items-center  py-2 text-white">
+          <div class="logo text-black text-2xl flex gap-2  items-center">
             <h1>devfinder</h1>
-            <form action="" class="form">
-              <input
-                type="text"
-                placeholder="Username"
-                class="bg-transparent outline-none text-xl name"
-              />
-            </form>
-            <!-- <button class="text-lg outline-none border-cyan-600">Find...</button> -->
           </div>
           <div class="mode">
-            <div class="card">
-              <div>
-                <input type="checkbox" class="checkbox" id="checkbox" />
-                <label for="checkbox" class="label">
-                  <i class="fa-solid fa-sun fa-spin"></i>
-                  <i class="fa-solid fa-moon fa-beat-fade"></i>
-
-                  <div class="ball"></div>
-                </label>
-              </div>
+            <span class="mode-text">DARK</span>
+            <div class="mode-logo">
+                <img class="moon" src="./images/moon.svg" alt="">
+                <img class="sun" src="./images/sun.svg" alt="">
             </div>
-            <div
-              class="menu-btn hidden max-[447px]:flex max-[1250px]:flex"
-            ></div>
-          </div>
+        </div>
         </nav>
-        <div
-          class="search px-24 max-[447px]:px-2 max-[447px]:text-center max-[660px]:py-10"
-        ></div>
+          <!-- Search -->
         <div class="search-bar">
-          <div class="search-logo"><img src="./images/search.svg" alt=""></div>
-          <form action="">
-              <input type="text" id="search" placeholder="enter your username">
-              <div class="search-error"></div>
-              <button class="search-btn">Search</button>
+          <div class="search-logo">
+            <img src="./images/search.svg" alt="" />
+          </div>
+          <form action="" class="form">
+            <input
+              type="text"
+              id="search"
+              placeholder="enter your username"
+              class="bg-transparent outline-none text-xl name"
+            />
+            <button class="search-btn">Search</button>
           </form>
+        </div>
+        
+        <div class="container-user w-full rounded-[15px] p-12">
+          <div class="info-top flex gap-10">
+            <div class="info-img w-[120px] h-[120px] rounded-full ">
+                <img src="./images/git-hub img.png" alt="">
+            </div>
+            <div class="info-right w-full">
+                <div class="right-top flex items-center justify-between">
+                    <div class="name text-2xl  ">The Octocat</div>
+                    <div class="date text-[16px]">Joined 25 Jan 2011</div>
+                </div>
+                <div class="info-id text-[#0079ff] text-[18px] mb-[20px]">@octocat</div>
+            </div>
+          </div>
+
+         <div class="info-desc mt-[-20px] ml-[21%] text-[16px] mb-9">
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros.
+         </div>
+         <div class="info-stats w-[480px] h-[85px] flex py-5 px-7 justify-between items-center rounded-lg ml-[21%] mb-9  ">
+          <div class="stats_block">
+              <div class="stats_title">Repos</div>
+              <div class="stats_desc repos">8</div>
+          </div>
+          <div class="stats_block">
+              <div class="stats_title">Followers</div>
+              <div class="stats_desc followers">3938</div>
+          </div>
+          <div class="stats_block">
+              <div class="stats_title">Following</div>
+              <div class="stats_desc following">9</div>
+          </div>
       </div>
-        <div class="container-user  mb-20"></div>
+      <div class="info-links flex gap-14 ml-[20%]">
+        <div class="links-left">
+            <div class="links_block w-[220px] flex items-center gap-4 mb-5">
+                <div class="links_icon"><img src="./image/location.svg" alt=""></div>
+                <div class="links_text location">San Francisco</div>
+            </div>
+            <div class="links_block">
+                <div class="links_icon"><img src="./image/url.svg" alt=""></div>
+                <div class="links_text url">https://github.blog</div>
+            </div>
+        </div>
+        <div class="links-right">
+            <div class="links_block">
+                <div class="links_icon"><img src="./image/twitter.png" alt=""></div>
+                <div class="links_text twitter">Not Available</div>
+            </div>
+            <div class="links_block">
+                <div class="links_icon"><img src="./image/office.svg" alt=""></div>
+                <div class="links_text office">@github</div>
+            </div>
+        </div>
+    </div>
+         </div>
+      </header>
+    </div>
   </body>
   <script src="./js/app.js"></script>
 </html>

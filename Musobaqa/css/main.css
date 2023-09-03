@@ -20,7 +20,6 @@
   --stats-bg: #f6f8ff;
   --mode-color: #697c9a;
 }
-
 * {
   padding: 0;
   margin: 0;
@@ -53,7 +52,6 @@
   padding: 23px 15px 23px 32px;
   margin-bottom: 24px;
 }
-
 .logo{
   color: var(--name-color);
   font-family: mono-bold;
@@ -152,7 +150,7 @@
 }
 .links_block {
   width: 220px;
-  display: flex;
+  display: flex;  
   align-items: center;
   gap: 16px;
   margin-bottom: 19px;
@@ -162,3 +160,4 @@
   font-size: 15px;
   color: var(--text-gray);
 }
+

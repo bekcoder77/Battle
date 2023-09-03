@@ -117,6 +117,14 @@
 .container-user {
   background: var(--elem-bg);
   box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.2);
+  border-radius: 15px;
+  padding: 44px;
+  width: 100%;
+}
+.right-top{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .info-img img {
   transition: 0s;
@@ -139,6 +147,14 @@
 }
 .info-stats {
   background-color: var(--stats-bg);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 15px;
+  margin-bottom: 36px;
+  padding: 20px;
+  width: 500px;
+  height: 85px;
 }
 .stats_title {
   font-family: mono-regular;

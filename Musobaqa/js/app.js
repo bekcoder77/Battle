@@ -59,6 +59,7 @@ btn.addEventListener("click", (e) => {
       document.querySelector('.search-bar input').style.width = '74%'
     }
   };
+  input.value = ""
 });
 
 const mode = document.querySelector('.mode');
